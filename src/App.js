@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
-import './App.css'; // Import the CSS file for styling
+import './App.css'; 
 
 
 const App = () => {
-  // Initial form fields, including default fields
+  // Ini form fields, including def fields
   const initialFormFields = [
     { type: 'text', label: 'Custom Text Input', validation: {} },
     { type: 'textarea', label: 'Custom Text Area', validation: {} },
@@ -15,7 +15,7 @@ const App = () => {
     { type: 'file', label: 'File Upload', validation: { required: true, allowedTypes: ['jpg', 'jpeg', 'png'], maxSize: 1024 * 1024 } },
   ];
 
-  // used useState to manage the form fields
+  // used useState to mang the form fields
   const [formFields, setFormFields] = useState([...initialFormFields]);
 
   
